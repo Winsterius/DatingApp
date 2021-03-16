@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace API.DTOs
 {
-    public class MemberDTO
+    public class MemberDto
     {
         public int Id { get; set; }
         public string Username { get; set; }
@@ -18,6 +18,6 @@ namespace API.DTOs
         public string Interests { get; set; }
         public string City { get; set; }
         public string Country { get; set; }
-        public ICollection<PhotoDTO> Photos { get; set; }
+        public ICollection<PhotoDto> Photos { get; set; }
     }
 }

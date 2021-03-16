@@ -22,7 +22,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<UserDTO>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<UserDto>>> GetUsers()
         {
             var users = await _userRepository.GetMembersAsync();
             
@@ -31,7 +31,7 @@ namespace API.Controllers
 
 
         [HttpGet("{username}")]
-        public async Task<ActionResult<MemberDTO>> GetUser(string username)
+        public async Task<ActionResult<MemberDto>> GetUser(string username)
         {
             return await _userRepository.GetMemberAsync(username);
         }
